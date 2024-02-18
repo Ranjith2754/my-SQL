@@ -1,0 +1,42 @@
+
+print("welcome to python")
+playing = input("Do you want to play? ")
+
+if playing != "yes":
+    quit()
+
+print("okay! Lets play")
+score= 0
+
+answer = input("what does LAN stands for? ")
+if answer.lower()=="local area network":
+               print('correct')
+               score+= 1
+else:
+          print("incorrect!")
+
+          
+
+answer= input("what is GPU stands for? ")
+if answer.lower()=="graphics processing unit":
+    print('correct!')
+    score+=1
+
+else:
+    print("incorrect")
+
+
+
+answer= input("what is psu stands for? ")
+if answer.lower()=="power supply":
+    print('correct!')
+    score+=1
+
+
+else:
+    print("inocorrect")
+
+
+print("you got "+str(score)+"questions correct!")
+print("you got "+str((score/4)*100 )+ "%.")
+    
